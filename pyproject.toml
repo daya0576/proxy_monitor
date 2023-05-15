@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "proxy-monitor"
+version = "0.1.0"
+description = ""
+authors = ["Chanjian Zhu <daya0576@gmail.com>"]
+readme = "README.md"
+packages = [{include = "proxy_monitor"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+httpx = {extras = ["socks"], version = "^0.24.0"}
+httpcore = "^0.17.0"
+requests = {extras = ["socks"], version = "^2.30.0"}
+shadowsocks = "^2.8.2"
+cryptography = "^40.0.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
