@@ -15,6 +15,9 @@ shadowsocks = "^2.8.2"
 cryptography = "^40.0.2"
 
 
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.0.267"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
